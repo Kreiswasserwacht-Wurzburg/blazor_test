@@ -9,5 +9,6 @@ deploy:
     site: wawa-blazor-test
     username: wawa-blazor-test\$wawa-blazor-test
     verbose: true
+    edge: true
     on:
         all_branches: true

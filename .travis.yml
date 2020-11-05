@@ -2,3 +2,11 @@ language: csharp
 solution: blazor-test.sln
 mono: none
 dotnet: 3.1.108
+script:
+    - dotnet build
+deploy:
+    - provider: azure_web_apps
+    - site: https://wawa-blazor-test.azurewebsites.net
+    - verbose: true
+    on:
+        all_branches: true

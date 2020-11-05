@@ -6,8 +6,7 @@ script:
     - dotnet build
 deploy:
     provider: azure_web_apps
-    site: wawa-blazor-test
-    verbose: true
     edge: true
+    skip_cleanup: true
     on:
         all_branches: true

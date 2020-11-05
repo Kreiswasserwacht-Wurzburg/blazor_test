@@ -7,7 +7,7 @@ script:
 deploy:
     provider: azure_web_apps
     site: wawa-blazor-test
-    username: wawa-blazor-test\$wawa-blazor-test
+    username: wawa-blazor-test\\$wawa-blazor-test
     verbose: true
     edge: true
     on:

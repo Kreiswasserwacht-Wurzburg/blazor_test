@@ -6,7 +6,7 @@ script:
     - dotnet build
 deploy:
     provider: azure_web_apps
-    site: https://wawa-blazor-test.azurewebsites.net
+    site: wawa-blazor-test
     verbose: true
     on:
         all_branches: true
